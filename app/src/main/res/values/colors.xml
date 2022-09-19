@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#335E89</color>//1 2C4971 2 335E89 3 6A96B9
+    <color name="colorPrimaryDark">#32AAE6</color>
+    <color name="colorAccent">#9C27B0</color>
+    <color name="colorPrimaryDarkqw">#3700B3</color>
+    <color name="gray">#808080 </color>
+    <color name="blueTG">#32AAE6</color>//TG
+</resources>

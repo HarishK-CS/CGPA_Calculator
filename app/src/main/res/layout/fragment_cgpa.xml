@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E2"
+    android:orientation="vertical"
+    tools:context=".CgpaFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:fontFamily="@font/spartan_bold"
+            android:text="Refresh If Your GPA Has Not Updated "
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_5sdp"/>
+        <ImageView
+            android:id="@+id/Btn_Reload"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:gravity="center"
+            android:src="@drawable/ic_autorenew_black_24dp"
+            android:textColor="#E0E0E2"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:fontFamily="@font/spartan_bold"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll1"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:fontFamily="@font/spartan_bold"
+                android:text="Semester 1"
+                android:textSize="@dimen/_10sdp" />
+            <EditText
+                android:id="@+id/txt1"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="Type GPA"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:fontFamily="@font/spartan_regular"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="#090909"
+                />
+            <ImageView
+                android:id="@+id/del1"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:visibility="gone"
+                android:src="@drawable/ic_delete_black_24dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:fontFamily="@font/spartan_bold"
+                android:text="Semester 2"
+                android:textSize="@dimen/_10sdp" />
+            <EditText
+                android:id="@+id/txt2"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="Type GPA"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:fontFamily="@font/spartan_regular"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="#090909"
+                />
+            <ImageView
+                android:id="@+id/del2"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:visibility="gone"
+                android:src="@drawable/ic_delete_black_24dp"
+                />
+            <ImageView
+                android:id="@+id/tick2"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:visibility="gone"
+                android:src="@drawable/ic_check_black_24dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:fontFamily="@font/spartan_bold"
+                android:text="Semester 3"
+                android:textSize="@dimen/_10sdp" />
+            <EditText
+                android:id="@+id/txt3"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="Type GPA"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:fontFamily="@font/spartan_regular"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="#090909"
+                />
+            <ImageView
+                android:id="@+id/del3"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:visibility="gone"
+                android:src="@drawable/ic_delete_black_24dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:fontFamily="@font/spartan_bold"
+                android:text="Semester 4"
+                android:textSize="@dimen/_10sdp" />
+            <EditText
+                android:id="@+id/txt4"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="Type GPA"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:fontFamily="@font/spartan_regular"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="#090909"
+                />
+            <ImageView
+                android:id="@+id/del4"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:visibility="gone"
+                android:src="@drawable/ic_delete_black_24dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:fontFamily="@font/spartan_bold"
+                android:text="Semester 5"
+                android:textSize="@dimen/_10sdp" />
+            <EditText
+                android:id="@+id/txt5"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="Type GPA"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:fontFamily="@font/spartan_regular"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="#090909"
+                />
+            <ImageView
+                android:id="@+id/del5"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:visibility="gone"
+                android:src="@drawable/ic_delete_black_24dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:fontFamily="@font/spartan_bold"
+                android:text="Semester 6"
+                android:textSize="@dimen/_10sdp" />
+            <EditText
+                android:id="@+id/txt6"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="Type GPA"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:fontFamily="@font/spartan_regular"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="#090909"
+                />
+            <ImageView
+                android:id="@+id/del6"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:visibility="gone"
+                android:src="@drawable/ic_delete_black_24dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:fontFamily="@font/spartan_bold"
+                android:text="Semester 7"
+                android:textSize="@dimen/_10sdp" />
+            <EditText
+                android:id="@+id/txt7"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="Type GPA"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:fontFamily="@font/spartan_regular"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="#090909"
+                />
+            <ImageView
+                android:id="@+id/del7"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:visibility="gone"
+                android:src="@drawable/ic_delete_black_24dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:fontFamily="@font/spartan_bold"
+                android:text="Semester 8"
+                android:textSize="@dimen/_10sdp" />
+            <EditText
+                android:id="@+id/txt8"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="Type GPA"
+                android:inputType="number "
+                android:imeOptions="actionNext"
+                android:fontFamily="@font/spartan_regular"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="#090909"
+                />
+            <ImageView
+                android:id="@+id/del8"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:visibility="gone"
+                android:src="@drawable/ic_delete_black_24dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="@dimen/_10sdp"
+
+        >
+
+        <TextView
+            android:id="@+id/ResultTextId"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:fontFamily="@font/spartan_bold"
+            android:text="CGPA : "
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ResultId"
+            android:layout_width="@dimen/_85sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:fontFamily="@font/spartan_bold"
+            android:textSize="@dimen/_8sdp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="" />
+        <ImageView
+            android:id="@+id/Btn_Copy"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:visibility="gone"
+            android:src="@drawable/ic_content_copy_black_24dp"
+            />
+        <ImageView
+            android:id="@+id/delCgpa"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_margin="@dimen/_2sdp"
+            android:visibility="gone"
+            android:src="@drawable/ic_delete_black_24dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="@dimen/_10sdp"
+
+        >
+        <TextView
+            android:id="@+id/ResultText1Id"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:visibility="gone"
+            android:fontFamily="@font/spartan_bold"
+            android:textAlignment="center"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Percentage : " />
+        <TextView
+            android:id="@+id/ResultPercentId"
+            android:layout_width="@dimen/_85sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:fontFamily="@font/spartan_bold"
+            android:textSize="@dimen/_8sdp"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="" />
+        <ImageView
+            android:id="@+id/Btn_CopyPerc"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:visibility="gone"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/ic_content_copy_black_24dp"
+            />
+        <ImageView
+            android:id="@+id/delPercent"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_margin="@dimen/_2sdp"
+            android:visibility="gone"
+            android:src="@drawable/ic_delete_black_24dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/Btn_Clear"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:gravity="center"
+            android:background="@drawable/clear_btn"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:fontFamily="@font/spartan_bold"
+            />
+        <Button
+            android:id="@+id/Btn_AddToProfile"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:text="Add To Profile"
+            android:gravity="center"
+            android:background="@drawable/sign_in_btn"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textColor="#fff"
+            android:visibility="gone"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:fontFamily="@font/spartan_bold"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/Btn_Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:gravity="center"
+        android:background="@drawable/sign_in_btn"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:textColor="#fff"
+        android:textSize="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/spartan_bold"
+        />
+</LinearLayout>

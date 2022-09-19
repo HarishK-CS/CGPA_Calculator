@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MechSemList">
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        >
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_6sdp"
+            android:textColor="#FFFFFF"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            />
+        <TextView
+            android:id="@+id/textView5"
+            android:textSize="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:fontFamily="@font/spartan_bold"
+            android:text="MECH"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ll1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:id="@+id/sem1Id"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/sign_in_btn"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="SEM 1"
+                android:textColor="#fff"
+                android:textSize="@dimen/_14sdp" />
+            <Button
+                android:id="@+id/sem2Id"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/sign_in_btn"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="SEM 2"
+                android:textColor="#fff"
+                android:textSize="@dimen/_14sdp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:id="@+id/sem3Id"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/sign_in_btn"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="SEM 3"
+                android:textColor="#fff"
+                android:textSize="@dimen/_14sdp" />
+            <Button
+                android:id="@+id/sem4Id"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/sign_in_btn"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="SEM 4"
+                android:textColor="#fff"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/sem5Id"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/sign_in_btn"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="SEM 5"
+                android:textColor="#fff"
+                android:textSize="@dimen/_14sdp" />
+            <Button
+                android:id="@+id/sem6Id"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/sign_in_btn"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="SEM 6"
+                android:textColor="#fff"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <Button
+                android:id="@+id/sem7Id"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/sign_in_btn"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="SEM 7"
+                android:textColor="#fff"
+                android:textSize="@dimen/_14sdp" />
+            <Button
+                android:id="@+id/sem8Id"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/sign_in_btn"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="SEM 8"
+                android:textColor="#fff"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

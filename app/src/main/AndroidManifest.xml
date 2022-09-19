@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.syndicate.cgpacalculator">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SetupProfile"></activity>
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".About" />
+        <activity android:name=".MechSem4List" />
+        <activity android:name=".MechSem3List" />
+        <activity android:name=".EeeSem4List" />
+        <activity android:name=".EeeSem3List" />
+        <activity android:name=".EceSem3List" />
+        <activity android:name=".EceSem4List" />
+        <activity android:name=".EceSem2List" />
+        <activity android:name=".EceSem1List" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CivilSemList" />
+        <activity android:name=".MechSemList" />
+        <activity android:name=".EeeSemList" />
+        <activity android:name=".EceSemList" />
+        <activity android:name=".ItSem8List" />
+        <activity android:name=".ItSem7List" />
+        <activity android:name=".ItSem6List" />
+        <activity android:name=".ItSem5List" />
+        <activity android:name=".ItSem4List" />
+        <activity android:name=".ItSem3List" />
+        <activity android:name=".ItSemList" />
+        <activity android:name=".Cgpa" />
+        <activity android:name=".CseSem8List" />
+        <activity android:name=".CseSem7List" />
+        <activity android:name=".CseSem6List" />
+        <activity android:name=".CseSem5List" />
+        <activity android:name=".CseSem4List" />
+        <activity android:name=".CseSem3List" />
+        <activity android:name=".CseSem2List" />
+        <activity android:name=".CseSem1List" />
+        <activity android:name=".CseSemList" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

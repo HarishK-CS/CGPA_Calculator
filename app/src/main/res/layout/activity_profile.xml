@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center"
+    tools:context=".ProfileActivity">
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        >
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_6sdp"
+            android:textColor="#FFFFFF"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            />
+        <TextView
+            android:id="@+id/textView5"
+            android:textSize="@dimen/_20sdp"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:fontFamily="@font/spartan_bold"
+            android:text="Profile "
+            />
+
+        <ImageView
+            android:id="@+id/writeProfile"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:layout_marginStart="@dimen/_120sdp"
+            android:src="@drawable/ic_create_black_24dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll1"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/spartan_bold"
+            android:text="Name : "
+            android:textSize="@dimen/_18sdp" />
+        <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:id="@+id/pro_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_shape"
+            android:text="Name"
+            android:padding="@dimen/_6sdp"
+            android:fontFamily="@font/spartan_regular"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15sdp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/spartan_bold"
+            android:text="Dept : "
+            android:textSize="@dimen/_18sdp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/pro_dept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Dept"
+            android:padding="@dimen/_6sdp"
+            android:background="@drawable/edittext_shape"
+            android:fontFamily="@font/spartan_regular"
+            android:gravity="center"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/spartan_bold"
+            android:text="Year : "
+            android:textSize="@dimen/_18sdp" />
+
+        <TextView
+            android:id="@+id/pro_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:text="Year"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:padding="@dimen/_6sdp"
+            android:background="@drawable/edittext_shape"
+            android:fontFamily="@font/spartan_regular"
+            android:gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_5sdp"
+        >
+            <LinearLayout
+              android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/_5sdp"
+              android:layout_marginStart="@dimen/_3sdp"
+               android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+              android:layout_gravity="center"
+                android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/spartan_bold"
+                android:text="CGPA : "
+                android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/pro_cgpa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="cgpa"
+                    android:padding="@dimen/_6sdp"
+                    android:background="@drawable/edittext_shape"
+                    android:fontFamily="@font/spartan_bold"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:textSize="@dimen/_12sdp"
+                     />
+          </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/spartan_bold"
+                    android:text="CGPA % : "
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/pro_cgpaPer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="cgpaPer"
+                    android:padding="@dimen/_6sdp"
+                    android:background="@drawable/edittext_shape"
+                    android:fontFamily="@font/spartan_bold"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
+    
+</LinearLayout>
+
+
+
+
+

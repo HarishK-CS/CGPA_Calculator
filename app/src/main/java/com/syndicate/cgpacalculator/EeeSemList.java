@@ -72,27 +72,31 @@ public class EeeSemList extends AppCompatActivity {
         sem5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(EeeSemList.this,"Under Developement",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(EeeSemList.this,EeeSem5List.class);
+                startActivity(intent);
             }
         });
 
         sem6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(EeeSemList.this,"Under Developement",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(EeeSemList.this,EeeSem6List.class);
+                startActivity(intent);
             }
         });
         sem7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(EeeSemList.this,"Under Developement",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(EeeSemList.this,EeeSem7List.class);
+                startActivity(intent);
             }
         });
 
         sem8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(EeeSemList.this,"Under Developement",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(EeeSemList.this,EeeSem8List.class);
+                startActivity(intent);
             }
         });
 

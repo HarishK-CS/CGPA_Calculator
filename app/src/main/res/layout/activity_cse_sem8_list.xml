@@ -147,7 +147,7 @@
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:fontFamily="@font/spartan_bold"
-            android:text="Grid Computing"
+            android:text="GC (ELECTIVE IV)"
             android:textSize="@dimen/_10sdp" />
         <EditText
             android:id="@+id/txt4"
@@ -177,7 +177,7 @@
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:fontFamily="@font/spartan_bold"
-            android:text="Cloud Computing"
+            android:text="CC  (ELECTIVE V)"
             android:textSize="@dimen/_10sdp" />
         <EditText
             android:id="@+id/txt5"

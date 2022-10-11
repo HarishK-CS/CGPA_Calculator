@@ -72,27 +72,31 @@ public class MechSemList extends AppCompatActivity {
         sem5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MechSemList.this,"Under Developement",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MechSemList.this,MechSem5List.class);
+                startActivity(intent);
             }
         });
 
         sem6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MechSemList.this,"Under Developement",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MechSemList.this,MechSem6List.class);
+                startActivity(intent);
             }
         });
         sem7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MechSemList.this,"Under Developement",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MechSemList.this,MechSem7List.class);
+                startActivity(intent);
             }
         });
 
         sem8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MechSemList.this,"Under Developement",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MechSemList.this,MechSem8List.class);
+                startActivity(intent);
             }
         });
 

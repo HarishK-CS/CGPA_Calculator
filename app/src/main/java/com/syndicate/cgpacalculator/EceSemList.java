@@ -71,27 +71,31 @@ public class EceSemList extends AppCompatActivity {
         sem5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(EceSemList.this,"Under Developement",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(EceSemList.this,EceSem5List.class);
+                startActivity(intent);
             }
         });
 
         sem6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(EceSemList.this,"Under Developement",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(EceSemList.this,EceSem6List.class);
+                startActivity(intent);
             }
         });
         sem7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(EceSemList.this,"Under Developement",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(EceSemList.this,EceSem7List.class);
+                startActivity(intent);
             }
         });
 
         sem8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(EceSemList.this,"Under Developement",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(EceSemList.this,EceSem8List.class);
+                startActivity(intent);
             }
         });
 

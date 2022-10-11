@@ -6,11 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 
 public class CivilSemList extends AppCompatActivity {
     Button sem1,sem2,sem3,sem4,sem5,sem6,sem7,sem8;
+    ImageView back;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +26,16 @@ public class CivilSemList extends AppCompatActivity {
         sem6 = findViewById(R.id.sem6Id);
         sem7 = findViewById(R.id.sem7Id);
         sem8 = findViewById(R.id.sem8Id);
+        back = findViewById(R.id.back);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CivilSemList.this,MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         sem1.setOnClickListener(new View.OnClickListener() {
             @Override

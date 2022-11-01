@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ItSem6List">
+    tools:context=".MechSem6List">
     <LinearLayout
         android:id="@+id/ll1"
         android:layout_width="match_parent"
@@ -31,7 +31,7 @@
             android:textColor="#FFFFFF"
             android:layout_marginTop="@dimen/_9sdp"
             android:fontFamily="@font/spartan_bold"
-            android:text="Semester 6 (IT)"
+            android:text="Semester 6 (MECH)"
             />
     </LinearLayout>
     <LinearLayout
@@ -55,8 +55,9 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="EPS"
+                android:text="OR"
                 android:textSize="@dimen/_10sdp" />
+
             <EditText
                 android:id="@+id/txt1"
                 android:layout_width="@dimen/_150sdp"
@@ -86,7 +87,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="Embedded System"
+                android:text="DTS"
                 android:textSize="@dimen/_10sdp" />
 
             <EditText
@@ -118,7 +119,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="Web Tech."
+                android:text=" Thermal Engg."
                 android:textSize="@dimen/_10sdp" />
 
             <EditText
@@ -148,7 +149,7 @@
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:fontFamily="@font/spartan_bold"
-            android:text="OOAD(ELECTIVE I)"
+            android:text="Comp Integ Manuf"
             android:textSize="@dimen/_10sdp" />
         <EditText
             android:id="@+id/txt4"
@@ -178,7 +179,7 @@
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:fontFamily="@font/spartan_bold"
-            android:text="E Business(ELECTIVE II)"
+            android:text=" Control System Engg."
             android:textSize="@dimen/_9sdp" />
         <EditText
             android:id="@+id/txt5"
@@ -209,7 +210,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="EPS Lab"
+                android:text="Control System Engg"
                 android:textSize="@dimen/_10sdp" />
             <EditText
                 android:id="@+id/txt6"
@@ -240,7 +241,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="ES Lab"
+                android:text="Thermal Engg Lab-I"
                 android:textSize="@dimen/_10sdp" />
             <EditText
                 android:id="@+id/txt7"
@@ -271,7 +272,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="Web Tech. Lab"
+                android:text=" Dyn of Mach Lab"
                 android:textSize="@dimen/_10sdp"/>
             <EditText
                 android:id="@+id/txt8"
@@ -303,7 +304,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="IV "
+                android:text="CFD Lab "
                 android:textSize="@dimen/_10sdp"/>
             <EditText
                 android:id="@+id/txt9"

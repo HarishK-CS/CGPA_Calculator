@@ -9,7 +9,7 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MechSem8List"></activity>
+        <activity android:name=".MechSem8List" />
         <activity android:name=".MechSem7List" />
         <activity android:name=".MechSem6List" />
         <activity android:name=".MechSem5List" />
@@ -21,7 +21,6 @@
         <activity android:name=".EceSem6List" />
         <activity android:name=".EceSem5List" />
         <activity android:name=".EceSem7List" />
-        <activity android:name=".EceSem5ListActivity" />
         <activity android:name=".SetupProfile" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".About" />
@@ -41,6 +40,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".CivilSemList" />
+        <activity android:name=".CivilSem1List" />
+        <activity android:name=".CivilSem2List" />
+        <activity android:name=".CivilSem3List" />
+        <activity android:name=".CivilSem4List" />
+        <activity android:name=".CivilSem5List" />
+        <activity android:name=".CivilSem6List" />
+        <activity android:name=".CivilSem7List" />
+        <activity android:name=".CivilSem8List" />
         <activity android:name=".MechSemList" />
         <activity android:name=".EeeSemList" />
         <activity android:name=".EceSemList" />

@@ -25,11 +25,11 @@ public class EceSem5List extends AppCompatActivity {
     Button submit,clear,copy;
     TextView result,resultText;
     ImageView cpyIcon,back;
-    EditText t1,t2,t3,t4,t5,t6,t7,t8,t9;
+    EditText t1,t2,t3,t4,t5,t6,t7,t8,t9,t10;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cse_sem5_list);
+        setContentView(R.layout.activity_ece_sem5_list);
 
         t1 = findViewById(R.id.txt1);
         t2 = findViewById(R.id.txt2);
@@ -40,6 +40,7 @@ public class EceSem5List extends AppCompatActivity {
         t7 = findViewById(R.id.txt7);
         t8 = findViewById(R.id.txt8);
         t9 = findViewById(R.id.txt9);
+        t10 = findViewById(R.id.txt10);
 
         back = findViewById(R.id.back);
 
@@ -418,6 +419,24 @@ public class EceSem5List extends AppCompatActivity {
             }
         });
         t9.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if (!s.toString().trim().isEmpty()) {
+                    t10.requestFocus();
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+        t10.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 

@@ -55,7 +55,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="EPS"
+                android:text="CN"
                 android:textSize="@dimen/_10sdp" />
             <EditText
                 android:id="@+id/txt1"
@@ -86,7 +86,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="Embedded System"
+                android:text="Web Tech"
                 android:textSize="@dimen/_10sdp" />
 
             <EditText
@@ -118,7 +118,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="Web Tech."
+                android:text="AI"
                 android:textSize="@dimen/_10sdp" />
 
             <EditText
@@ -148,7 +148,7 @@
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:fontFamily="@font/spartan_bold"
-            android:text="OOAD(ELECTIVE I)"
+            android:text="ICT"
             android:textSize="@dimen/_10sdp" />
         <EditText
             android:id="@+id/txt4"
@@ -178,7 +178,7 @@
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:fontFamily="@font/spartan_bold"
-            android:text="E Business(ELECTIVE II)"
+            android:text=" ELECTIVE-II"
             android:textSize="@dimen/_9sdp" />
         <EditText
             android:id="@+id/txt5"
@@ -209,7 +209,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="EPS Lab"
+                android:text="ELECTIVE-III"
                 android:textSize="@dimen/_10sdp" />
             <EditText
                 android:id="@+id/txt6"
@@ -240,7 +240,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="ES Lab"
+                android:text="CN Lab"
                 android:textSize="@dimen/_10sdp" />
             <EditText
                 android:id="@+id/txt7"
@@ -303,7 +303,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="IV "
+                android:text="MINI PROJEXT "
                 android:textSize="@dimen/_10sdp"/>
             <EditText
                 android:id="@+id/txt9"

@@ -55,8 +55,9 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="OS"
+                android:text="Dyn of Machinery"
                 android:textSize="@dimen/_10sdp" />
+
             <EditText
                 android:id="@+id/txt1"
                 android:layout_width="@dimen/_150sdp"
@@ -86,7 +87,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="CN"
+                android:text="Design of Mach Ele."
                 android:textSize="@dimen/_10sdp" />
 
             <EditText
@@ -118,7 +119,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="DBMS"
+                android:text="Metro &amp; Qul Con."
                 android:textSize="@dimen/_10sdp" />
 
             <EditText
@@ -148,7 +149,7 @@
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:fontFamily="@font/spartan_bold"
-            android:text="LT"
+            android:text="Heat and Mass Tran."
             android:textSize="@dimen/_10sdp" />
         <EditText
             android:id="@+id/txt4"
@@ -178,7 +179,7 @@
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:fontFamily="@font/spartan_bold"
-            android:text="SE"
+            android:text="Mech Measurements"
             android:textSize="@dimen/_10sdp" />
         <EditText
             android:id="@+id/txt5"
@@ -209,7 +210,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="OS Lab"
+                android:text="Manuf Process Lab"
                 android:textSize="@dimen/_10sdp" />
             <EditText
                 android:id="@+id/txt6"
@@ -240,7 +241,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="CN Lab"
+                android:text="MMM Lab"
                 android:textSize="@dimen/_10sdp" />
             <EditText
                 android:id="@+id/txt7"
@@ -271,7 +272,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="DBMS Lab"
+                android:text="Comput Method Lab"
                 android:textSize="@dimen/_10sdp"/>
             <EditText
                 android:id="@+id/txt8"

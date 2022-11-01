@@ -28,7 +28,7 @@ public class MechSem6List extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cse_sem6_list);
+        setContentView(R.layout.activity_mech_sem6_list);
 
         t1 = findViewById(R.id.txt1);
         t2 = findViewById(R.id.txt2);

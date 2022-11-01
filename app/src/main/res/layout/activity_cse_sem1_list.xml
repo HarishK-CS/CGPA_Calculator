@@ -150,7 +150,7 @@
            android:layout_marginEnd="@dimen/_10sdp"
            android:layout_marginRight="@dimen/_10sdp"
            android:fontFamily="@font/spartan_bold"
-           android:text="BEE"
+           android:text="BEEE"
            android:textSize="@dimen/_10sdp" />
        <EditText
            android:id="@+id/txt4"

@@ -56,41 +56,47 @@ public class CivilSemList extends AppCompatActivity {
         sem3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(CivilSemList.this,"Under Developement",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(CivilSemList.this,CivilSem3List.class);
+                startActivity(intent);
             }
         });
 
         sem4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(CivilSemList.this,"Under Developement",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(CivilSemList.this,CivilSem4List.class);
+                startActivity(intent);
             }
         });
 
         sem5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(CivilSemList.this,"Under Developement",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(CivilSemList.this,CivilSem5List.class);
+                startActivity(intent);
             }
         });
 
         sem6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(CivilSemList.this,"Under Developement",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(CivilSemList.this,CivilSem6List.class);
+                startActivity(intent);
             }
         });
         sem7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(CivilSemList.this,"Under Developement",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(CivilSemList.this,CivilSem7List.class);
+                startActivity(intent);
             }
         });
 
         sem8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(CivilSemList.this,"Under Developement",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(CivilSemList.this,CivilSem8List.class);
+                startActivity(intent);
             }
         });
 

@@ -55,7 +55,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="EPS"
+                android:text="Digs Com."
                 android:textSize="@dimen/_10sdp" />
             <EditText
                 android:id="@+id/txt1"
@@ -86,7 +86,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="Embedded System"
+                android:text="Wireless com."
                 android:textSize="@dimen/_10sdp" />
 
             <EditText
@@ -118,7 +118,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="Web Tech."
+                android:text="Dig signal pro"
                 android:textSize="@dimen/_10sdp" />
 
             <EditText
@@ -148,7 +148,7 @@
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:fontFamily="@font/spartan_bold"
-            android:text="OOAD(ELECTIVE I)"
+            android:text="Antennas &amp; wave pro. "
             android:textSize="@dimen/_10sdp" />
         <EditText
             android:id="@+id/txt4"

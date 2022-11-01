@@ -25,11 +25,11 @@ public class MechSem7List extends AppCompatActivity {
     Button submit,clear,copy;
     TextView result,resultText;
     ImageView cpyIcon,back;
-    EditText t1,t2,t3,t4,t5,t6,t7,t8;
+    EditText t1,t2,t3,t4,t5,t6,t7,t8,t9;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cse_sem7_list);
+        setContentView(R.layout.activity_mech_sem7_list);
 
         t1 = findViewById(R.id.txt1);
         t2 = findViewById(R.id.txt2);
@@ -39,6 +39,7 @@ public class MechSem7List extends AppCompatActivity {
         t6 = findViewById(R.id.txt6);
         t7 = findViewById(R.id.txt7);
         t8 = findViewById(R.id.txt8);
+        t9 = findViewById(R.id.txt9);
 
         back = findViewById(R.id.back);
 
@@ -84,6 +85,8 @@ public class MechSem7List extends AppCompatActivity {
                 t6.setText("");
                 t7.setText("");
                 t8.setText("");
+                t9.setText("");
+
                 result.setVisibility(view.INVISIBLE);
                 cpyIcon.setVisibility(View.INVISIBLE);
                 copy.setVisibility(View.INVISIBLE);
@@ -112,7 +115,7 @@ public class MechSem7List extends AppCompatActivity {
     }
     public float calculate()
     {
-        int val1,val2,val3,val4,val5,val6,val7,val8;
+        int val1,val2,val3,val4,val5,val6,val7,val8,val9;
         if (t1.getText().toString().equals("S")||t1.getText().toString().equals("s"))
         {
             val1=10;
@@ -384,6 +387,24 @@ public class MechSem7List extends AppCompatActivity {
             }
         });
         t8.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if (!s.toString().trim().isEmpty()) {
+                    t9.requestFocus();
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+        t9.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 

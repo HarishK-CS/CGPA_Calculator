@@ -55,8 +55,9 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="OS"
+                android:text="CE-II"
                 android:textSize="@dimen/_10sdp" />
+
             <EditText
                 android:id="@+id/txt1"
                 android:layout_width="@dimen/_150sdp"
@@ -77,7 +78,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_10sdp">
-
             <TextView
                 android:layout_width="150dp"
                 android:layout_height="26dp"
@@ -86,24 +86,25 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="CN"
+                android:text="SE"
                 android:textSize="@dimen/_10sdp" />
-
             <EditText
                 android:id="@+id/txt2"
                 android:layout_width="@dimen/_150sdp"
                 android:layout_height="@dimen/_20sdp"
                 android:background="@null"
+                android:fontFamily="@font/spartan_regular"
                 android:gravity="center"
                 android:hint="Type Grade"
+                android:imeOptions="actionNext"
                 android:inputType="text"
                 android:maxLength="1"
-                android:imeOptions="actionNext"
-                android:fontFamily="@font/spartan_regular"
-                android:textSize="@dimen/_10sdp"
                 android:textColor="#090909"
-                />
+                android:textSize="@dimen/_10sdp" />
+
+
         </LinearLayout>
+
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -118,7 +119,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="DBMS"
+                android:text="OS"
                 android:textSize="@dimen/_10sdp" />
 
             <EditText
@@ -148,7 +149,7 @@
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:fontFamily="@font/spartan_bold"
-            android:text="LT"
+            android:text="DBMS"
             android:textSize="@dimen/_10sdp" />
         <EditText
             android:id="@+id/txt4"
@@ -178,7 +179,7 @@
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:fontFamily="@font/spartan_bold"
-            android:text="SE"
+            android:text="TOF"
             android:textSize="@dimen/_10sdp" />
         <EditText
             android:id="@+id/txt5"
@@ -209,7 +210,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="OS Lab"
+                android:text="CE lab"
                 android:textSize="@dimen/_10sdp" />
             <EditText
                 android:id="@+id/txt6"
@@ -240,7 +241,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="CN Lab"
+                android:text="OS Lab"
                 android:textSize="@dimen/_10sdp" />
             <EditText
                 android:id="@+id/txt7"

@@ -56,7 +56,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="AI"
+                android:text="CAD"
                 android:textSize="@dimen/_10sdp" />
             <EditText
                 android:id="@+id/txt1"
@@ -87,7 +87,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="CH &amp; NTS"
+                android:text="IEM"
                 android:textSize="@dimen/_10sdp" />
 
             <EditText
@@ -119,7 +119,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="Platform Tech."
+                android:text="RAC &amp; CE"
                 android:textSize="@dimen/_10sdp" />
 
             <EditText
@@ -149,7 +149,7 @@
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:fontFamily="@font/spartan_bold"
-            android:text="STQA (ELECTIVE III)"
+            android:text="Elective-III"
             android:textSize="@dimen/_10sdp" />
         <EditText
             android:id="@+id/txt4"
@@ -179,7 +179,7 @@
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:fontFamily="@font/spartan_bold"
-            android:text="AI Lab"
+            android:text="TE Lab-II"
             android:textSize="@dimen/_10sdp" />
         <EditText
             android:id="@+id/txt5"
@@ -210,7 +210,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="TS Lab"
+                android:text="CAD Lab"
                 android:textSize="@dimen/_10sdp" />
             <EditText
                 android:id="@+id/txt6"
@@ -241,7 +241,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="PT Lab"
+                android:text="COM.(VIVA VOICE)"
                 android:textSize="@dimen/_10sdp" />
             <EditText
                 android:id="@+id/txt7"
@@ -272,10 +272,42 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="Project - I"
+                android:text="IV"
                 android:textSize="@dimen/_10sdp" />
             <EditText
                 android:id="@+id/txt8"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="Type Grade"
+                android:maxLength="1"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:fontFamily="@font/spartan_regular"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="#090909"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:fontFamily="@font/spartan_bold"
+                android:text="Project Work Phase-I"
+                android:textSize="@dimen/_10sdp" />
+            <EditText
+                android:id="@+id/txt9"
                 android:layout_width="@dimen/_150sdp"
                 android:layout_height="@dimen/_20sdp"
                 android:background="@null"

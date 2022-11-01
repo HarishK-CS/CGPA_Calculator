@@ -56,7 +56,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="AI"
+                android:text="MC"
                 android:textSize="@dimen/_10sdp" />
             <EditText
                 android:id="@+id/txt1"
@@ -87,7 +87,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="CH &amp; NTS"
+                android:text="Web service &amp; XML"
                 android:textSize="@dimen/_10sdp" />
 
             <EditText
@@ -119,7 +119,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="Platform Tech."
+                android:text="CRY &amp; Network Security"
                 android:textSize="@dimen/_10sdp" />
 
             <EditText
@@ -149,7 +149,7 @@
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:fontFamily="@font/spartan_bold"
-            android:text="STQA (ELECTIVE III)"
+            android:text="Elective-IV"
             android:textSize="@dimen/_10sdp" />
         <EditText
             android:id="@+id/txt4"
@@ -179,7 +179,7 @@
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:fontFamily="@font/spartan_bold"
-            android:text="AI Lab"
+            android:text="Elective-V"
             android:textSize="@dimen/_10sdp" />
         <EditText
             android:id="@+id/txt5"
@@ -210,7 +210,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="TS Lab"
+                android:text="Web Service &amp; XML Lab"
                 android:textSize="@dimen/_10sdp" />
             <EditText
                 android:id="@+id/txt6"
@@ -241,7 +241,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="PT Lab"
+                android:text="Projectwork Phase-I"
                 android:textSize="@dimen/_10sdp" />
             <EditText
                 android:id="@+id/txt7"
@@ -272,7 +272,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="Project - I"
+                android:text="Seminar"
                 android:textSize="@dimen/_10sdp" />
             <EditText
                 android:id="@+id/txt8"

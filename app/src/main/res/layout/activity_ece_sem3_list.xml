@@ -24,15 +24,41 @@
             />
         <TextView
             android:id="@+id/textView5"
-            android:textSize="@dimen/_20sdp"
-            android:layout_width="match_parent"
+            android:textSize="@dimen/_15sdp"
+            android:layout_width="@dimen/_150sdp"
             android:layout_height="@dimen/_30sdp"
             android:layout_marginStart="@dimen/_6sdp"
             android:textColor="#FFFFFF"
             android:layout_marginTop="@dimen/_9sdp"
             android:fontFamily="@font/spartan_bold"
-            android:text="Semester 3 (ECE) "
+            android:text="Semester 3(ECE) "
             />
+        <ImageView
+            android:id="@+id/export"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_70sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:src="@drawable/ic_share_black_24dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:fontFamily="@font/spartan_bold"
+            android:gravity="center"
+            android:text="Note: If you have FA in any of your subject grade, You cannot able to generate Your GPA"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="#F80606"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_5sdp"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -340,7 +366,7 @@
                 android:layout_marginEnd="@dimen/_4sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:layout_marginLeft="@dimen/_10sdp"
-                android:text="Grade : " />
+                android:text="GPA : " />
             <TextView
                 android:id="@+id/ResultId"
                 android:layout_width="@dimen/_85sdp"

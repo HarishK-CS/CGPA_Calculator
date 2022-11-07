@@ -2,6 +2,7 @@ package com.syndicate.cgpacalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
@@ -10,6 +11,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -48,6 +50,72 @@ public class EeeSem3List extends AppCompatActivity {
         back = findViewById(R.id.back);
 
         setupSemInputs();
+
+
+        t1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                t1.setText("");
+                t1.requestFocus();
+            }
+        });
+
+        t2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                t2.setText("");
+                t2.requestFocus();
+            }
+        });
+        t3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                t3.setText("");
+                t3.requestFocus();
+            }
+        });
+        t4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                t4.setText("");
+                t4.requestFocus();
+            }
+        });
+        t5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                t5.setText("");
+                t5.requestFocus();
+            }
+        });
+        t6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                t6.setText("");
+                t6.requestFocus();
+            }
+        });
+        t7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                t7.setText("");
+                t7.requestFocus();
+            }
+        });
+        t8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                t8.setText("");
+                t8.requestFocus();
+            }
+        });
+        t9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                t9.setText("");
+                t9.requestFocus();
+            }
+        });
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -423,7 +491,8 @@ public class EeeSem3List extends AppCompatActivity {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 if (!s.toString().trim().isEmpty()) {
-                    t1.requestFocus();
+                    InputMethodManager imm  =  (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
+                    imm.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY,0);
                 }
             }
 

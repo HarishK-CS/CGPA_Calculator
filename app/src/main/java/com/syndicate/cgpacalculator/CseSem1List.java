@@ -2,6 +2,8 @@ package com.syndicate.cgpacalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.accessibilityservice.InputMethod;
+import android.app.Activity;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
@@ -10,6 +12,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -26,7 +29,7 @@ public class CseSem1List extends AppCompatActivity {
 
     Button submit,clear,copy;
     TextView result,resultText;
-    ImageView cpyIcon,back;
+    ImageView cpyIcon,back,export;
     EditText t1,t2,t3,t4,t5,t6,t7,t8,t9;
 
     @Override
@@ -52,8 +55,83 @@ public class CseSem1List extends AppCompatActivity {
         clear = findViewById(R.id.Btn_Clear);
         copy = findViewById(R.id.Btn_Copy);
         cpyIcon = findViewById(R.id.copy);
+        export = findViewById(R.id.export);
 
         setupSemInputs();
+
+        export.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                writeGpa();
+                Intent intent = new Intent(CseSem1List.this,Sample.class);
+                startActivity(intent);
+            }
+        });
+
+        t1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                t1.setText("");
+                t1.requestFocus();
+            }
+        });
+
+        t2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                t2.setText("");
+                t2.requestFocus();
+            }
+        });
+        t3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                t3.setText("");
+                t3.requestFocus();
+            }
+        });
+        t4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                t4.setText("");
+                t4.requestFocus();
+            }
+        });
+        t5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                t5.setText("");
+                t5.requestFocus();
+            }
+        });
+        t6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                t6.setText("");
+                t6.requestFocus();
+            }
+        });
+        t7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                t7.setText("");
+                t7.requestFocus();
+            }
+        });
+        t8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                t8.setText("");
+                t8.requestFocus();
+            }
+        });
+        t9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                t9.setText("");
+                t9.requestFocus();
+            }
+        });
 
 
         back.setOnClickListener(new View.OnClickListener() {
@@ -281,6 +359,8 @@ public class CseSem1List extends AppCompatActivity {
         return res;
     }
 
+
+
     private void setupSemInputs() {
         t1.addTextChangedListener(new TextWatcher() {
             @Override
@@ -435,7 +515,9 @@ public class CseSem1List extends AppCompatActivity {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 if (!s.toString().trim().isEmpty()) {
-                    t1.requestFocus();
+                //    t1.requestFocus();
+                    InputMethodManager imm  =  (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
+                    imm.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY,0);
                 }
             }
 
@@ -460,6 +542,23 @@ public class CseSem1List extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+
+    public void writeGpa(){
+        String textToSave = t1.getText().toString().toUpperCase()+" "+ t2.getText().toString().toUpperCase()+" "+t3.getText().toString().toUpperCase()+" "+t4.getText().toString().toUpperCase()+" "+t5.getText().toString().toUpperCase()+" "+t6.getText().toString().toUpperCase()+" "+t7.getText().toString().toUpperCase()+" "+t8.getText().toString().toUpperCase()+" "+t9.getText().toString().toUpperCase() ;
+
+        try{
+            FileOutputStream fileOutputStream = openFileOutput("sem1Gpa.txt",MODE_PRIVATE);
+            fileOutputStream.write(textToSave.getBytes());
+            fileOutputStream.close();
+            Toast.makeText(CseSem1List.this,"Export ",Toast.LENGTH_SHORT).show();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
 
 
 

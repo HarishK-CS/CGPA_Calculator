@@ -61,14 +61,12 @@
             android:layout_marginTop="@dimen/_8sdp"
             android:layout_marginBottom="@dimen/_5sdp"/>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         >
-
-
-
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -286,6 +284,42 @@
                 />
         </LinearLayout>
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="195dp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:fontFamily="@font/spartan_bold"
+                    android:text="IV"
+                    android:textSize="@dimen/_10sdp" />
+                <EditText
+                    android:id="@+id/txt8"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="Type Grade"
+                    android:inputType="text"
+                    android:maxLength="1"
+                    android:imeOptions="actionNext"
+                    android:fontFamily="@font/spartan_regular"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="#090909"
+                    />
+            </LinearLayout>
+        <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -302,7 +336,7 @@
                 android:text="Project Work Phase  - I"
                 android:textSize="@dimen/_10sdp" />
             <EditText
-                android:id="@+id/txt8"
+                android:id="@+id/txt9"
                 android:layout_width="@dimen/_150sdp"
                 android:layout_height="@dimen/_20sdp"
                 android:background="@null"
@@ -537,4 +571,5 @@
         </TableRow>
 
     </TableLayout>
+    </LinearLayout>
 </LinearLayout>

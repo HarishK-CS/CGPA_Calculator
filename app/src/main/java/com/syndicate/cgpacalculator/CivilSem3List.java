@@ -24,7 +24,7 @@ import java.io.IOException;
 
 public class CivilSem3List extends AppCompatActivity {
 
-    Button submit,clear,copy;
+    Button submit,clear,copy,s,a,b,c,d,e,f;
     TextView result,resultText;
     ImageView cpyIcon,back;
     EditText t1,t2,t3,t4,t5,t6,t7,t8,t9;
@@ -53,13 +53,369 @@ public class CivilSem3List extends AppCompatActivity {
         copy = findViewById(R.id.Btn_Copy);
         cpyIcon = findViewById(R.id.copy);
 
-        setupSemInputs();
+         s = findViewById(R.id.S);
+        a = findViewById(R.id.A);
+        b = findViewById(R.id.B);
+        c = findViewById(R.id.C);
+        d = findViewById(R.id.D);
+        e = findViewById(R.id.E);
+        f = findViewById(R.id.F);
 
-        t1.setOnClickListener(new View.OnClickListener() {
+        t1.setShowSoftInputOnFocus(false);
+        t2.setShowSoftInputOnFocus(false);
+        t3.setShowSoftInputOnFocus(false);
+        t4.setShowSoftInputOnFocus(false);
+        t5.setShowSoftInputOnFocus(false);
+        t6.setShowSoftInputOnFocus(false);
+        t7.setShowSoftInputOnFocus(false);
+        t8.setShowSoftInputOnFocus(false);
+        t9.setShowSoftInputOnFocus(false);
+
+
+        final int[] cursor = {0};
+        final String[] txt = {"t1","t2","t3","t4","t5","t6","t7","t8","t9"};
+
+
+
+        s.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(cursor[0]<9){
+                    switch(txt[cursor[0]]){
+                        case "t1":
+                            t1.setText("S");
+                            cursor[0]++;
+                            break;
+                        case "t2":
+                            t2.setText("S");
+                            cursor[0]++;
+                            break;
+                        case "t3":
+                            t3.setText("S");
+                            cursor[0]++;
+                            break;
+                        case "t4":
+                            t4.setText("S");
+                            cursor[0]++;
+                            break;
+                        case "t5":
+                            t5.setText("S");
+                            cursor[0]++;
+                            break;
+                        case "t6":
+                            t6.setText("S");
+                            cursor[0]++;
+                            break;
+                        case "t7":
+                            t7.setText("S");
+                            cursor[0]++;
+                            break;
+                        case "t8":
+                            t8.setText("S");
+                            cursor[0]++;
+                            break;
+                        case "t9":
+                            t9.setText("S");
+                            cursor[0]++;
+                            break;
+                    }
+                }else{
+                    cursor[0]=0;
+                }
+            }
+        });
+
+        a.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(cursor[0]<9) {
+                    switch (txt[cursor[0]]) {
+                        case "t1":
+                            t1.setText("A");
+                            cursor[0]++;
+                            break;
+                        case "t2":
+                            t2.setText("A");
+                            cursor[0]++;
+                            break;
+                        case "t3":
+                            t3.setText("A");
+                            cursor[0]++;
+                            break;
+                        case "t4":
+                            t4.setText("A");
+                            cursor[0]++;
+                            break;
+                        case "t5":
+                            t5.setText("A");
+                            cursor[0]++;
+                            break;
+                        case "t6":
+                            t6.setText("A");
+                            cursor[0]++;
+                            break;
+                        case "t7":
+                            t7.setText("A");
+                            cursor[0]++;
+                            break;
+                        case "t8":
+                            t8.setText("A");
+                            cursor[0]++;
+                            break;
+                        case "t9":
+                            t9.setText("A");
+                            cursor[0]++;
+                            break;
+                    }
+                }else{
+                        cursor[0]=0;
+                    }
+                }
+
+        });
+
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (cursor[0] < 9) {
+                    switch (txt[cursor[0]]) {
+                        case "t1":
+                            t1.setText("B");
+                            cursor[0]++;
+                            break;
+                        case "t2":
+                            t2.setText("B");
+                            cursor[0]++;
+                            break;
+                        case "t3":
+                            t3.setText("B");
+                            cursor[0]++;
+                            break;
+                        case "t4":
+                            t4.setText("B");
+                            cursor[0]++;
+                            break;
+                        case "t5":
+                            t5.setText("B");
+                            cursor[0]++;
+                            break;
+                        case "t6":
+                            t6.setText("B");
+                            cursor[0]++;
+                            break;
+                        case "t7":
+                            t7.setText("B");
+                            cursor[0]++;
+                            break;
+                        case "t8":
+                            t8.setText("B");
+                            cursor[0]++;
+                            break;
+                        case "t9":
+                            t9.setText("B");
+                            cursor[0]++;
+                            break;
+                    }
+                } else {
+                    cursor[0] = 0;
+                }
+            }
+
+        });
+        c.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (cursor[0] < 9) {
+                    switch (txt[cursor[0]]) {
+                        case "t1":
+                            t1.setText("C");
+                            cursor[0]++;
+                            break;
+                        case "t2":
+                            t2.setText("C");
+                            cursor[0]++;
+                            break;
+                        case "t3":
+                            t3.setText("C");
+                            cursor[0]++;
+                            break;
+                        case "t4":
+                            t4.setText("C");
+                            cursor[0]++;
+                            break;
+                        case "t5":
+                            t5.setText("C");
+                            cursor[0]++;
+                            break;
+                        case "t6":
+                            t6.setText("C");
+                            cursor[0]++;
+                            break;
+                        case "t7":
+                            t7.setText("C");
+                            cursor[0]++;
+                            break;
+                        case "t8":
+                            t8.setText("C");
+                            cursor[0]++;
+                            break;
+                        case "t9":
+                            t9.setText("C");
+                            cursor[0]++;
+                            break;
+                    }
+                    }else{
+                        cursor[0] = 0;
+                    }
+                }
+        });
+        d.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (cursor[0] < 9) {
+                    switch (txt[cursor[0]]) {
+                        case "t1":
+                            t1.setText("D");
+                            cursor[0]++;
+                            break;
+                        case "t2":
+                            t2.setText("D");
+                            cursor[0]++;
+                            break;
+                        case "t3":
+                            t3.setText("D");
+                            cursor[0]++;
+                            break;
+                        case "t4":
+                            t4.setText("D");
+                            cursor[0]++;
+                            break;
+                        case "t5":
+                            t5.setText("D");
+                            cursor[0]++;
+                            break;
+                        case "t6":
+                            t6.setText("D");
+                            cursor[0]++;
+                            break;
+                        case "t7":
+                            t7.setText("D");
+                            cursor[0]++;
+                            break;
+                        case "t8":
+                            t8.setText("D");
+                            cursor[0]++;
+                            break;
+                        case "t9":
+                            t9.setText("D");
+                            cursor[0]++;
+                            break;
+                    }
+                }else{
+                    cursor[0] = 0;
+                }
+            }
+        });
+        e.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (cursor[0] < 9) {
+                    switch (txt[cursor[0]]) {
+                        case "t1":
+                            t1.setText("E");
+                            cursor[0]++;
+                            break;
+                        case "t2":
+                            t2.setText("E");
+                            cursor[0]++;
+                            break;
+                        case "t3":
+                            t3.setText("E");
+                            cursor[0]++;
+                            break;
+                        case "t4":
+                            t4.setText("E");
+                            cursor[0]++;
+                            break;
+                        case "t5":
+                            t5.setText("E");
+                            cursor[0]++;
+                            break;
+                        case "t6":
+                            t6.setText("E");
+                            cursor[0]++;
+                            break;
+                        case "t7":
+                            t7.setText("E");
+                            cursor[0]++;
+                            break;
+                        case "t8":
+                            t8.setText("E");
+                            cursor[0]++;
+                            break;
+                        case "t9":
+                            t9.setText("E");
+                            cursor[0]++;
+                            break;
+                    }
+                }else{
+                    cursor[0] = 0;
+                }
+            }
+        });
+        f.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (cursor[0] < 9) {
+                    switch (txt[cursor[0]]) {
+                        case "t1":
+                            t1.setText("F");
+                            cursor[0]++;
+                            break;
+                        case "t2":
+                            t2.setText("F");
+                            cursor[0]++;
+                            break;
+                        case "t3":
+                            t3.setText("F");
+                            cursor[0]++;
+                            break;
+                        case "t4":
+                            t4.setText("F");
+                            cursor[0]++;
+                            break;
+                        case "t5":
+                            t5.setText("F");
+                            cursor[0]++;
+                            break;
+                        case "t6":
+                            t6.setText("F");
+                            cursor[0]++;
+                            break;
+                        case "t7":
+                            t7.setText("F");
+                            cursor[0]++;
+                            break;
+                        case "t8":
+                            t8.setText("F");
+                            cursor[0]++;
+                            break;
+                        case "t9":
+                            t9.setText("F");
+                            cursor[0]++;
+                            break;
+                    }
+                }else{
+                    cursor[0] = 0;
+                }
+            }
+        });
+
+t1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 t1.setText("");
-                t1.requestFocus();
+                cursor[0]=0;
             }
         });
 
@@ -67,58 +423,59 @@ public class CivilSem3List extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 t2.setText("");
-                t2.requestFocus();
+                cursor[0]=1;
             }
         });
         t3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 t3.setText("");
-                t3.requestFocus();
+                cursor[0]=2;
             }
         });
         t4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 t4.setText("");
-                t4.requestFocus();
+                cursor[0]=3;
             }
         });
         t5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 t5.setText("");
-                t5.requestFocus();
+                cursor[0]=4;
             }
         });
         t6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 t6.setText("");
-                t6.requestFocus();
+                cursor[0]=5;
             }
         });
         t7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 t7.setText("");
-                t7.requestFocus();
+                cursor[0]=6;
             }
         });
         t8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 t8.setText("");
-                t8.requestFocus();
+                cursor[0]=7;
             }
         });
         t9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 t9.setText("");
-                t9.requestFocus();
+                cursor[0]=8;
             }
         });
+
 
 
 
@@ -161,6 +518,7 @@ public class CivilSem3List extends AppCompatActivity {
                 copy.setVisibility(View.INVISIBLE);
                 resultText.setVisibility(View.INVISIBLE);
                 t1.requestFocus();
+                cursor[0]=0;
             }
         });
         copy.setOnClickListener(new View.OnClickListener() {

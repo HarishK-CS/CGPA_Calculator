@@ -237,7 +237,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="CAD Lab"
+                android:text="CAE Lab"
                 android:textSize="@dimen/_10sdp" />
             <EditText
                 android:id="@+id/txt6"
@@ -299,7 +299,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="IV"
+                android:text="Industrial Visit"
                 android:textSize="@dimen/_10sdp" />
             <EditText
                 android:id="@+id/txt8"

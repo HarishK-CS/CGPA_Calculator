@@ -82,7 +82,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="OS"
+                android:text="CE"
                 android:textSize="@dimen/_10sdp" />
             <EditText
                 android:id="@+id/txt1"
@@ -113,7 +113,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="CN"
+                android:text="Analog &amp; Digital IC"
                 android:textSize="@dimen/_10sdp" />
 
             <EditText
@@ -145,7 +145,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="DBMS"
+                android:text="T &amp; D"
                 android:textSize="@dimen/_10sdp" />
 
             <EditText
@@ -175,7 +175,7 @@
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:fontFamily="@font/spartan_bold"
-            android:text="LT"
+            android:text="PE"
             android:textSize="@dimen/_10sdp" />
         <EditText
             android:id="@+id/txt4"
@@ -205,7 +205,7 @@
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:fontFamily="@font/spartan_bold"
-            android:text="SE"
+            android:text="M &amp; I"
             android:textSize="@dimen/_10sdp" />
         <EditText
             android:id="@+id/txt5"
@@ -236,7 +236,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="OS Lab"
+                android:text="Elective - I"
                 android:textSize="@dimen/_10sdp" />
             <EditText
                 android:id="@+id/txt6"
@@ -267,7 +267,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="CN Lab"
+                android:text="Electronics Lab-III"
                 android:textSize="@dimen/_10sdp" />
             <EditText
                 android:id="@+id/txt7"
@@ -298,7 +298,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="DBMS Lab"
+                android:text="M &amp; C Lab"
                 android:textSize="@dimen/_10sdp"/>
             <EditText
                 android:id="@+id/txt8"

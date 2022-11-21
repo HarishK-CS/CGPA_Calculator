@@ -446,7 +446,6 @@
             android:fontFamily="@font/spartan_bold"
             />
     </LinearLayout>
-
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="match_parent"

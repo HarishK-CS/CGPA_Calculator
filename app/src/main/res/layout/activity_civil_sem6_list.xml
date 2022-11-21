@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#CFCDCD"
     android:orientation="vertical"
     tools:context=".CivilSem6List">
     <LinearLayout
@@ -440,36 +441,162 @@
     </LinearLayout>
 
 
-    <Button
-        android:id="@+id/Btn_Clear"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp">
+        <Button
+            android:id="@+id/Btn_Clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:gravity="center"
+            android:background="@drawable/clear_btn"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textColor="#F60606"
+            android:textSize="@dimen/_14sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:fontFamily="@font/spartan_bold"
+            />
+        <Button
+            android:id="@+id/Btn_Submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:gravity="center"
+            android:background="@drawable/sign_in_btn"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textColor="#fff"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/spartan_bold"
+            />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Clear"
-        android:gravity="center"
-        android:background="@drawable/clear_btn"
-        android:padding="@dimen/_10sdp"
-        android:layout_marginStart="@dimen/_10sdp"
-        android:layout_marginEnd="@dimen/_10sdp"
-        android:textColor="@color/colorPrimary"
-        android:textSize="@dimen/_14sdp"
-        android:layout_marginTop="@dimen/_15sdp"
-        android:fontFamily="@font/spartan_bold"
-        />
-    <Button
-        android:id="@+id/Btn_Submit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Calculate"
-        android:gravity="center"
-        android:background="@drawable/sign_in_btn"
-        android:padding="@dimen/_10sdp"
-        android:layout_marginStart="@dimen/_10sdp"
-        android:layout_marginEnd="@dimen/_10sdp"
-        android:textColor="#fff"
-        android:textSize="@dimen/_14sdp"
-        android:layout_marginTop="@dimen/_5sdp"
-        android:fontFamily="@font/spartan_bold"
-        />
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/S"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:background="@drawable/circle"
+                android:layout_weight="1"
+                android:text="S"
+                android:textColor="#000000"
+                android:backgroundTint="#ffffff"
+                android:fontFamily="@font/spartan_bold"
+                android:layout_margin="5dp"
+                android:layout_height="40dp"
+                android:textSize="24sp"
+                />
+
+            <Button
+                android:id="@+id/A"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:text="A"
+                android:textColor="#000000"
+                android:backgroundTint="#ffffff"
+                android:fontFamily="@font/spartan_bold"
+                android:layout_margin="5dp"
+                android:layout_height="40dp"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/B"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:background="@drawable/circle"
+                android:textColor="#000000"
+                android:backgroundTint="#ffffff"
+                android:fontFamily="@font/spartan_bold"
+                android:layout_margin="5dp"
+                android:layout_height="40dp"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:text="B" />
 
 
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <Button
+                android:id="@+id/C"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:textColor="#000000"
+                android:backgroundTint="#ffffff"
+                android:fontFamily="@font/spartan_bold"
+                android:layout_margin="5dp"
+                android:background="@drawable/circle"
+                android:layout_height="40dp"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:text="c" />
+            <Button
+                android:id="@+id/D"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:background="@drawable/circle"
+                android:layout_weight="1"
+                android:text="D"
+                android:textColor="#000000"
+                android:backgroundTint="#ffffff"
+                android:fontFamily="@font/spartan_bold"
+                android:layout_margin="5dp"
+                android:layout_height="40dp"
+                android:textSize="24sp"
+                />
+
+            <Button
+                android:id="@+id/E"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:text="E"
+                android:textColor="#000000"
+                android:backgroundTint="#ffffff"
+                android:fontFamily="@font/spartan_bold"
+                android:layout_margin="5dp"
+                android:layout_height="40dp"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/F"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:background="@drawable/circle"
+                android:textColor="#000000"
+                android:backgroundTint="#ffffff"
+                android:fontFamily="@font/spartan_bold"
+                android:layout_margin="5dp"
+                android:layout_height="40dp"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:text="F" />
+        </TableRow>
+
+    </TableLayout>
 </LinearLayout>

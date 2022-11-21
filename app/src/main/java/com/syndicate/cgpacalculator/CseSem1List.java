@@ -59,12 +59,14 @@ public class CseSem1List extends AppCompatActivity {
 
         setupSemInputs();
 
+        export = findViewById(R.id.export);
         export.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                writeGpa();
-                Intent intent = new Intent(CseSem1List.this,Sample.class);
-                startActivity(intent);
+                Toast.makeText(CseSem1List.this,"Under Developement",Toast.LENGTH_SHORT).show();
+//                writeGpa();
+//                Intent intent = new Intent(CseSem1List.this,Sample.class);
+//                startActivity(intent);
             }
         });
 

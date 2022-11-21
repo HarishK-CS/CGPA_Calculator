@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#CFCDCD"
+    android:layout_height="@dimen/_95sdp">
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/S"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:background="@drawable/circle"
+                android:layout_weight="1"
+                android:text="S"
+                android:textColor="#000000"
+                android:backgroundTint="#ffffff"
+                android:fontFamily="@font/spartan_bold"
+                android:layout_margin="5dp"
+                android:layout_height="40dp"
+                android:textSize="24sp"
+                />
+
+            <Button
+                android:id="@+id/A"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:text="A"
+                android:textColor="#000000"
+                android:backgroundTint="#ffffff"
+                android:fontFamily="@font/spartan_bold"
+                android:layout_margin="5dp"
+                android:layout_height="40dp"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/B"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:background="@drawable/circle"
+                android:textColor="#000000"
+                android:backgroundTint="#ffffff"
+                android:fontFamily="@font/spartan_bold"
+                android:layout_margin="5dp"
+                android:layout_height="40dp"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:text="B" />
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <Button
+                android:id="@+id/C"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:textColor="#000000"
+                android:backgroundTint="#ffffff"
+                android:fontFamily="@font/spartan_bold"
+                android:layout_margin="5dp"
+                android:background="@drawable/circle"
+                android:layout_height="40dp"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:text="c" />
+            <Button
+                android:id="@+id/D"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:background="@drawable/circle"
+                android:layout_weight="1"
+                android:text="D"
+                android:textColor="#000000"
+                android:backgroundTint="#ffffff"
+                android:fontFamily="@font/spartan_bold"
+                android:layout_margin="5dp"
+                android:layout_height="40dp"
+                android:textSize="24sp"
+                />
+
+            <Button
+                android:id="@+id/E"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:text="E"
+                android:textColor="#000000"
+                android:backgroundTint="#ffffff"
+                android:fontFamily="@font/spartan_bold"
+                android:layout_margin="5dp"
+                android:layout_height="40dp"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/F"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:background="@drawable/circle"
+                android:textColor="#000000"
+                android:backgroundTint="#ffffff"
+                android:fontFamily="@font/spartan_bold"
+                android:layout_margin="5dp"
+                android:layout_height="40dp"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:text="F" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

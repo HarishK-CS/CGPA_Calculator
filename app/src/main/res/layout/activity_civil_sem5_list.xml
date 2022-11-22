@@ -66,6 +66,37 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="151dp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:fontFamily="@font/spartan_bold"
+                android:text="CM"
+                android:textSize="@dimen/_10sdp" />
+            <EditText
+                android:id="@+id/txt1"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="Type Grade"
+                android:inputType="text"
+                android:maxLength="1"
+                android:imeOptions="actionNext"
+                android:fontFamily="@font/spartan_regular"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="#090909"
+                />
+        </LinearLayout>
 
 
         <LinearLayout
@@ -85,7 +116,7 @@
                 android:text="SA-I"
                 android:textSize="@dimen/_10sdp" />
             <EditText
-                android:id="@+id/txt1"
+                android:id="@+id/txt2"
                 android:layout_width="@dimen/_150sdp"
                 android:layout_height="@dimen/_20sdp"
                 android:background="@null"
@@ -117,7 +148,7 @@
                 android:textSize="@dimen/_10sdp" />
 
             <EditText
-                android:id="@+id/txt2"
+                android:id="@+id/txt3"
                 android:layout_width="@dimen/_150sdp"
                 android:layout_height="@dimen/_20sdp"
                 android:background="@null"
@@ -149,7 +180,7 @@
                 android:textSize="@dimen/_10sdp" />
 
             <EditText
-                android:id="@+id/txt3"
+                android:id="@+id/txt4"
                 android:layout_width="@dimen/_150sdp"
                 android:layout_height="@dimen/_20sdp"
                 android:background="@null"
@@ -178,7 +209,7 @@
             android:text="TE-I"
             android:textSize="@dimen/_10sdp" />
         <EditText
-            android:id="@+id/txt4"
+            android:id="@+id/txt5"
             android:layout_width="@dimen/_150sdp"
             android:layout_height="@dimen/_20sdp"
             android:background="@null"
@@ -208,7 +239,7 @@
             android:text="H &amp; WRE"
             android:textSize="@dimen/_10sdp" />
         <EditText
-            android:id="@+id/txt5"
+            android:id="@+id/txt6"
             android:layout_width="@dimen/_150sdp"
             android:layout_height="@dimen/_20sdp"
             android:background="@null"
@@ -239,7 +270,7 @@
                 android:text=" GE Lab"
                 android:textSize="@dimen/_10sdp" />
             <EditText
-                android:id="@+id/txt6"
+                android:id="@+id/txt7"
                 android:layout_width="@dimen/_150sdp"
                 android:layout_height="@dimen/_20sdp"
                 android:background="@null"
@@ -270,7 +301,7 @@
                 android:text="FF &amp; HM Lab"
                 android:textSize="@dimen/_10sdp" />
             <EditText
-                android:id="@+id/txt7"
+                android:id="@+id/txt8"
                 android:layout_width="@dimen/_150sdp"
                 android:layout_height="@dimen/_20sdp"
                 android:background="@null"
@@ -301,7 +332,7 @@
                 android:text="TE Lab"
                 android:textSize="@dimen/_10sdp"/>
             <EditText
-                android:id="@+id/txt8"
+                android:id="@+id/txt9"
                 android:layout_width="@dimen/_150sdp"
                 android:layout_height="@dimen/_20sdp"
                 android:background="@null"
@@ -332,7 +363,7 @@
                 android:text="General Prof. - I "
                 android:textSize="@dimen/_10sdp"/>
             <EditText
-                android:id="@+id/txt9"
+                android:id="@+id/txt10"
                 android:layout_width="@dimen/_150sdp"
                 android:layout_height="@dimen/_20sdp"
                 android:background="@null"

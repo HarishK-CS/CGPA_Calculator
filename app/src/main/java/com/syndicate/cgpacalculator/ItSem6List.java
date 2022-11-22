@@ -32,6 +32,13 @@ public class ItSem6List extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_it_sem6_list);
 
+        result = findViewById(R.id.ResultId);
+        resultText = findViewById(R.id.ResultTextId);
+        submit = findViewById(R.id.Btn_Submit);
+        clear = findViewById(R.id.Btn_Clear);
+        copy = findViewById(R.id.Btn_Copy);
+        cpyIcon = findViewById(R.id.copy);
+
         t1 = findViewById(R.id.txt1);
         t2 = findViewById(R.id.txt2);
         t3 = findViewById(R.id.txt3);
@@ -43,7 +50,7 @@ public class ItSem6List extends AppCompatActivity {
         t9 = findViewById(R.id.txt9);
         t10 = findViewById(R.id.txt10);
 
-//        back = findViewById(R.id.back);
+        back = findViewById(R.id.back);
         s = findViewById(R.id.S);
         a = findViewById(R.id.A);
         b = findViewById(R.id.B);
@@ -61,17 +68,17 @@ public class ItSem6List extends AppCompatActivity {
         t7.setShowSoftInputOnFocus(false);
         t8.setShowSoftInputOnFocus(false);
         t9.setShowSoftInputOnFocus(false);
-
+        t10.setShowSoftInputOnFocus(false);
 
         final int[] cursor = {0};
-        final String[] txt = {"t1","t2","t3","t4","t5","t6","t7","t8","t9"};
+        final String[] txt = {"t1","t2","t3","t4","t5","t6","t7","t8","t9","t10"};
 
 
 
         s.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(cursor[0]<9){
+                if(cursor[0]<10){
                     switch(txt[cursor[0]]){
                         case "t1":
                             t1.setText("S");
@@ -109,6 +116,11 @@ public class ItSem6List extends AppCompatActivity {
                             t9.setText("S");
                             cursor[0]++;
                             break;
+                        case "t10":
+                            t10.setText("S");
+                            cursor[0]++;
+                            break;
+
                     }
                 }else{
                     cursor[0]=0;
@@ -119,7 +131,7 @@ public class ItSem6List extends AppCompatActivity {
         a.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(cursor[0]<9) {
+                if(cursor[0]<10) {
                     switch (txt[cursor[0]]) {
                         case "t1":
                             t1.setText("A");
@@ -157,6 +169,10 @@ public class ItSem6List extends AppCompatActivity {
                             t9.setText("A");
                             cursor[0]++;
                             break;
+                        case "t10":
+                            t10.setText("A");
+                            cursor[0]++;
+                            break;
                     }
                 }else{
                     cursor[0]=0;
@@ -168,7 +184,7 @@ public class ItSem6List extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (cursor[0] < 9) {
+                if (cursor[0] < 10) {
                     switch (txt[cursor[0]]) {
                         case "t1":
                             t1.setText("B");
@@ -206,6 +222,10 @@ public class ItSem6List extends AppCompatActivity {
                             t9.setText("B");
                             cursor[0]++;
                             break;
+                        case "t10":
+                            t10.setText("B");
+                            cursor[0]++;
+                            break;
                     }
                 } else {
                     cursor[0] = 0;
@@ -216,7 +236,7 @@ public class ItSem6List extends AppCompatActivity {
         c.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (cursor[0] < 9) {
+                if (cursor[0] < 10) {
                     switch (txt[cursor[0]]) {
                         case "t1":
                             t1.setText("C");
@@ -254,6 +274,10 @@ public class ItSem6List extends AppCompatActivity {
                             t9.setText("C");
                             cursor[0]++;
                             break;
+                        case "t10":
+                            t10.setText("C");
+                            cursor[0]++;
+                            break;
                     }
                 }else{
                     cursor[0] = 0;
@@ -263,7 +287,7 @@ public class ItSem6List extends AppCompatActivity {
         d.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (cursor[0] < 9) {
+                if (cursor[0] < 10) {
                     switch (txt[cursor[0]]) {
                         case "t1":
                             t1.setText("D");
@@ -301,6 +325,10 @@ public class ItSem6List extends AppCompatActivity {
                             t9.setText("D");
                             cursor[0]++;
                             break;
+                        case "t10":
+                            t10.setText("D");
+                            cursor[0]++;
+                            break;
                     }
                 }else{
                     cursor[0] = 0;
@@ -310,7 +338,7 @@ public class ItSem6List extends AppCompatActivity {
         e.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (cursor[0] < 9) {
+                if (cursor[0] < 10) {
                     switch (txt[cursor[0]]) {
                         case "t1":
                             t1.setText("E");
@@ -348,6 +376,10 @@ public class ItSem6List extends AppCompatActivity {
                             t9.setText("E");
                             cursor[0]++;
                             break;
+                        case "t10":
+                            t10.setText("E");
+                            cursor[0]++;
+                            break;
                     }
                 }else{
                     cursor[0] = 0;
@@ -357,7 +389,7 @@ public class ItSem6List extends AppCompatActivity {
         f.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (cursor[0] < 9) {
+                if (cursor[0] < 10) {
                     switch (txt[cursor[0]]) {
                         case "t1":
                             t1.setText("F");
@@ -395,24 +427,16 @@ public class ItSem6List extends AppCompatActivity {
                             t9.setText("F");
                             cursor[0]++;
                             break;
+                        case "t10":
+                            t10.setText("F");
+                            cursor[0]++;
+                            break;
                     }
                 }else{
                     cursor[0] = 0;
                 }
             }
         });
-
-
-
-        result = findViewById(R.id.ResultId);
-        resultText = findViewById(R.id.ResultTextId);
-        submit = findViewById(R.id.Btn_Submit);
-        clear = findViewById(R.id.Btn_Clear);
-        copy = findViewById(R.id.Btn_Copy);
-        cpyIcon = findViewById(R.id.copy);
-
-        setupSemInputs();
-
 
         t1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -478,6 +502,18 @@ public class ItSem6List extends AppCompatActivity {
                 cursor[0]=8;
             }
         });
+        t10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                t10.setText("");
+                cursor[0]=9;
+            }
+        });
+
+
+//        setupSemInputs();
+
+
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -513,7 +549,7 @@ public class ItSem6List extends AppCompatActivity {
                 t8.setText("");
                 t9.setText("");
                 t10.setText("");
-                result.setVisibility(view.INVISIBLE);
+                result.setVisibility(View.INVISIBLE);
                 cpyIcon.setVisibility(View.INVISIBLE);
                 copy.setVisibility(View.INVISIBLE);
                 resultText.setVisibility(View.INVISIBLE);
@@ -716,196 +752,196 @@ public class ItSem6List extends AppCompatActivity {
 
 
 
-        float res = ((float)val1*4+(float)val2*4+(float)val3*4+(float)val4*4+(float)val5*4+(float)val6*2+(float)val7*2+(float)val8*2+(float)val9*1+(float)val10*1)/28;
+        float res = ((float)val1*4+(float)val2*4+(float)val3*4+(float)val4*4+(float)val5*4+(float)val6*4+(float)val7*2+(float)val8*2+(float)val9*2+(float)val10*1)/31;
 
         return res;
     }
 
-    private void setupSemInputs() {
-        t1.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (!s.toString().trim().isEmpty()) {
-                    t2.requestFocus();
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-            }
-        });
-        t2.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (!s.toString().trim().isEmpty()) {
-                    t3.requestFocus();
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-            }
-        });
-        t3.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (!s.toString().trim().isEmpty()) {
-                    t4.requestFocus();
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-            }
-        });
-        t4.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (!s.toString().trim().isEmpty()) {
-                    t5.requestFocus();
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-            }
-        });
-        t5.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (!s.toString().trim().isEmpty()) {
-                    t6.requestFocus();
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-            }
-        });
-        t6.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (!s.toString().trim().isEmpty()) {
-                    t7.requestFocus();
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-            }
-        });
-        t7.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (!s.toString().trim().isEmpty()) {
-                    t8.requestFocus();
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-            }
-        });
-        t8.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (!s.toString().trim().isEmpty()) {
-                    t9.requestFocus();
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-            }
-        });
-        t9.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (!s.toString().trim().isEmpty()) {
-                    t10.requestFocus();
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-            }
-        });
-        t10.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (!s.toString().trim().isEmpty()) {
-                    InputMethodManager imm  =  (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
-                    imm.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY,0);
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-            }
-        });
-
-
-    }
+//    private void setupSemInputs() {
+//        t1.addTextChangedListener(new TextWatcher() {
+//            @Override
+//            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+//
+//            }
+//
+//            @Override
+//            public void onTextChanged(CharSequence s, int start, int before, int count) {
+//                if (!s.toString().trim().isEmpty()) {
+//                    t2.requestFocus();
+//                }
+//            }
+//
+//            @Override
+//            public void afterTextChanged(Editable s) {
+//
+//            }
+//        });
+//        t2.addTextChangedListener(new TextWatcher() {
+//            @Override
+//            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+//
+//            }
+//
+//            @Override
+//            public void onTextChanged(CharSequence s, int start, int before, int count) {
+//                if (!s.toString().trim().isEmpty()) {
+//                    t3.requestFocus();
+//                }
+//            }
+//
+//            @Override
+//            public void afterTextChanged(Editable s) {
+//
+//            }
+//        });
+//        t3.addTextChangedListener(new TextWatcher() {
+//            @Override
+//            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+//
+//            }
+//
+//            @Override
+//            public void onTextChanged(CharSequence s, int start, int before, int count) {
+//                if (!s.toString().trim().isEmpty()) {
+//                    t4.requestFocus();
+//                }
+//            }
+//
+//            @Override
+//            public void afterTextChanged(Editable s) {
+//
+//            }
+//        });
+//        t4.addTextChangedListener(new TextWatcher() {
+//            @Override
+//            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+//
+//            }
+//
+//            @Override
+//            public void onTextChanged(CharSequence s, int start, int before, int count) {
+//                if (!s.toString().trim().isEmpty()) {
+//                    t5.requestFocus();
+//                }
+//            }
+//
+//            @Override
+//            public void afterTextChanged(Editable s) {
+//
+//            }
+//        });
+//        t5.addTextChangedListener(new TextWatcher() {
+//            @Override
+//            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+//
+//            }
+//
+//            @Override
+//            public void onTextChanged(CharSequence s, int start, int before, int count) {
+//                if (!s.toString().trim().isEmpty()) {
+//                    t6.requestFocus();
+//                }
+//            }
+//
+//            @Override
+//            public void afterTextChanged(Editable s) {
+//
+//            }
+//        });
+//        t6.addTextChangedListener(new TextWatcher() {
+//            @Override
+//            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+//
+//            }
+//
+//            @Override
+//            public void onTextChanged(CharSequence s, int start, int before, int count) {
+//                if (!s.toString().trim().isEmpty()) {
+//                    t7.requestFocus();
+//                }
+//            }
+//
+//            @Override
+//            public void afterTextChanged(Editable s) {
+//
+//            }
+//        });
+//        t7.addTextChangedListener(new TextWatcher() {
+//            @Override
+//            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+//
+//            }
+//
+//            @Override
+//            public void onTextChanged(CharSequence s, int start, int before, int count) {
+//                if (!s.toString().trim().isEmpty()) {
+//                    t8.requestFocus();
+//                }
+//            }
+//
+//            @Override
+//            public void afterTextChanged(Editable s) {
+//
+//            }
+//        });
+//        t8.addTextChangedListener(new TextWatcher() {
+//            @Override
+//            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+//
+//            }
+//
+//            @Override
+//            public void onTextChanged(CharSequence s, int start, int before, int count) {
+//                if (!s.toString().trim().isEmpty()) {
+//                    t9.requestFocus();
+//                }
+//            }
+//
+//            @Override
+//            public void afterTextChanged(Editable s) {
+//
+//            }
+//        });
+//        t9.addTextChangedListener(new TextWatcher() {
+//            @Override
+//            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+//
+//            }
+//
+//            @Override
+//            public void onTextChanged(CharSequence s, int start, int before, int count) {
+//                if (!s.toString().trim().isEmpty()) {
+//                    t10.requestFocus();
+//                }
+//            }
+//
+//            @Override
+//            public void afterTextChanged(Editable s) {
+//
+//            }
+//        });
+//        t10.addTextChangedListener(new TextWatcher() {
+//            @Override
+//            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+//
+//            }
+//
+//            @Override
+//            public void onTextChanged(CharSequence s, int start, int before, int count) {
+//                if (!s.toString().trim().isEmpty()) {
+//                    InputMethodManager imm  =  (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
+//                    imm.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY,0);
+//                }
+//            }
+//
+//            @Override
+//            public void afterTextChanged(Editable s) {
+//
+//            }
+//        });
+//
+//
+//    }
     public void write(){
         String textToSave = result.getText().toString();
 

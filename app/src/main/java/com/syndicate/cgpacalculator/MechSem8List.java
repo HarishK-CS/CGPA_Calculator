@@ -65,20 +65,18 @@ public class MechSem8List extends AppCompatActivity {
         t4.setShowSoftInputOnFocus(false);
         t5.setShowSoftInputOnFocus(false);
         t6.setShowSoftInputOnFocus(false);
-        t7.setShowSoftInputOnFocus(false);
-        t8.setShowSoftInputOnFocus(false);
-        t9.setShowSoftInputOnFocus(false);
+
 
 
         final int[] cursor = {0};
-        final String[] txt = {"t1","t2","t3","t4","t5","t6","t7","t8","t9"};
+        final String[] txt = {"t1","t2","t3","t4","t5","t6"};
 
 
 
         s.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(cursor[0]<9){
+                if(cursor[0]<6){
                     switch(txt[cursor[0]]){
                         case "t1":
                             t1.setText("S");
@@ -114,7 +112,7 @@ public class MechSem8List extends AppCompatActivity {
         a.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(cursor[0]<9) {
+                if(cursor[0]<6) {
                     switch (txt[cursor[0]]) {
                         case "t1":
                             t1.setText("A");
@@ -151,7 +149,7 @@ public class MechSem8List extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (cursor[0] < 9) {
+                if (cursor[0] < 6) {
                     switch (txt[cursor[0]]) {
                         case "t1":
                             t1.setText("B");
@@ -187,7 +185,7 @@ public class MechSem8List extends AppCompatActivity {
         c.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (cursor[0] < 9) {
+                if (cursor[0] < 6) {
                     switch (txt[cursor[0]]) {
                         case "t1":
                             t1.setText("C");
@@ -222,7 +220,7 @@ public class MechSem8List extends AppCompatActivity {
         d.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (cursor[0] < 9) {
+                if (cursor[0] < 6) {
                     switch (txt[cursor[0]]) {
                         case "t1":
                             t1.setText("D");
@@ -257,7 +255,7 @@ public class MechSem8List extends AppCompatActivity {
         e.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (cursor[0] < 9) {
+                if (cursor[0] < 6) {
                     switch (txt[cursor[0]]) {
                         case "t1":
                             t1.setText("E");
@@ -292,7 +290,7 @@ public class MechSem8List extends AppCompatActivity {
         f.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (cursor[0] < 9) {
+                if (cursor[0] < 6) {
                     switch (txt[cursor[0]]) {
                         case "t1":
                             t1.setText("F");
@@ -400,7 +398,6 @@ public class MechSem8List extends AppCompatActivity {
                 t4.setText("");
                 t5.setText("");
                 t6.setText("");
-
                 result.setVisibility(view.INVISIBLE);
                 cpyIcon.setVisibility(View.INVISIBLE);
                 copy.setVisibility(View.INVISIBLE);
@@ -535,7 +532,7 @@ public class MechSem8List extends AppCompatActivity {
 
 
 
-        float res = ((float)val1*4+(float)val2*1+(float)val3*4+(float)val4*4+(float)val5*4+(float)val6*8)/25;
+        float res = ((float)val1*4+(float)val2*1+(float)val3*3+(float)val4*3+(float)val5*8+(float)val6*1)/20;
 
         return res;
     }

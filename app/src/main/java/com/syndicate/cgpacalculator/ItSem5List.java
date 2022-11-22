@@ -27,7 +27,7 @@ public class ItSem5List extends AppCompatActivity {
     Button submit,clear,copy,s,a,b,c,d,e,f;
     TextView result,resultText;
     ImageView cpyIcon,back;
-    EditText t1,t2,t3,t4,t5,t6,t7,t8,t9;
+    EditText t1,t2,t3,t4,t5,t6,t7,t8,t9,t10;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +42,8 @@ public class ItSem5List extends AppCompatActivity {
         t7 = findViewById(R.id.txt7);
         t8 = findViewById(R.id.txt8);
         t9 = findViewById(R.id.txt9);
+        t10 = findViewById(R.id.txt10);
+
 
         back = findViewById(R.id.back);
 
@@ -70,17 +72,17 @@ public class ItSem5List extends AppCompatActivity {
         t7.setShowSoftInputOnFocus(false);
         t8.setShowSoftInputOnFocus(false);
         t9.setShowSoftInputOnFocus(false);
+        t10.setShowSoftInputOnFocus(false);
 
 
         final int[] cursor = {0};
-        final String[] txt = {"t1","t2","t3","t4","t5","t6","t7","t8","t9"};
-
+        final String[] txt = {"t1","t2","t3","t4","t5","t6","t7","t8","t9","t10"};
 
 
         s.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(cursor[0]<9){
+                if(cursor[0]<10){
                     switch(txt[cursor[0]]){
                         case "t1":
                             t1.setText("S");
@@ -118,6 +120,11 @@ public class ItSem5List extends AppCompatActivity {
                             t9.setText("S");
                             cursor[0]++;
                             break;
+                        case "t10":
+                            t10.setText("S");
+                            cursor[0]++;
+                            break;
+
                     }
                 }else{
                     cursor[0]=0;
@@ -128,7 +135,7 @@ public class ItSem5List extends AppCompatActivity {
         a.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(cursor[0]<9) {
+                if(cursor[0]<10) {
                     switch (txt[cursor[0]]) {
                         case "t1":
                             t1.setText("A");
@@ -166,6 +173,10 @@ public class ItSem5List extends AppCompatActivity {
                             t9.setText("A");
                             cursor[0]++;
                             break;
+                        case "t10":
+                            t10.setText("A");
+                            cursor[0]++;
+                            break;
                     }
                 }else{
                     cursor[0]=0;
@@ -177,7 +188,7 @@ public class ItSem5List extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (cursor[0] < 9) {
+                if (cursor[0] < 10) {
                     switch (txt[cursor[0]]) {
                         case "t1":
                             t1.setText("B");
@@ -215,6 +226,10 @@ public class ItSem5List extends AppCompatActivity {
                             t9.setText("B");
                             cursor[0]++;
                             break;
+                        case "t10":
+                            t10.setText("B");
+                            cursor[0]++;
+                            break;
                     }
                 } else {
                     cursor[0] = 0;
@@ -225,7 +240,7 @@ public class ItSem5List extends AppCompatActivity {
         c.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (cursor[0] < 9) {
+                if (cursor[0] < 10) {
                     switch (txt[cursor[0]]) {
                         case "t1":
                             t1.setText("C");
@@ -263,6 +278,10 @@ public class ItSem5List extends AppCompatActivity {
                             t9.setText("C");
                             cursor[0]++;
                             break;
+                        case "t10":
+                            t10.setText("C");
+                            cursor[0]++;
+                            break;
                     }
                 }else{
                     cursor[0] = 0;
@@ -272,7 +291,7 @@ public class ItSem5List extends AppCompatActivity {
         d.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (cursor[0] < 9) {
+                if (cursor[0] < 10) {
                     switch (txt[cursor[0]]) {
                         case "t1":
                             t1.setText("D");
@@ -310,6 +329,10 @@ public class ItSem5List extends AppCompatActivity {
                             t9.setText("D");
                             cursor[0]++;
                             break;
+                        case "t10":
+                            t10.setText("D");
+                            cursor[0]++;
+                            break;
                     }
                 }else{
                     cursor[0] = 0;
@@ -319,7 +342,7 @@ public class ItSem5List extends AppCompatActivity {
         e.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (cursor[0] < 9) {
+                if (cursor[0] < 10) {
                     switch (txt[cursor[0]]) {
                         case "t1":
                             t1.setText("E");
@@ -357,6 +380,10 @@ public class ItSem5List extends AppCompatActivity {
                             t9.setText("E");
                             cursor[0]++;
                             break;
+                        case "t10":
+                            t10.setText("E");
+                            cursor[0]++;
+                            break;
                     }
                 }else{
                     cursor[0] = 0;
@@ -366,7 +393,7 @@ public class ItSem5List extends AppCompatActivity {
         f.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (cursor[0] < 9) {
+                if (cursor[0] < 10) {
                     switch (txt[cursor[0]]) {
                         case "t1":
                             t1.setText("F");
@@ -404,14 +431,16 @@ public class ItSem5List extends AppCompatActivity {
                             t9.setText("F");
                             cursor[0]++;
                             break;
+                        case "t10":
+                            t10.setText("F");
+                            cursor[0]++;
+                            break;
                     }
                 }else{
                     cursor[0] = 0;
                 }
             }
         });
-
-
 
         t1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -477,6 +506,13 @@ public class ItSem5List extends AppCompatActivity {
                 cursor[0]=8;
             }
         });
+        t10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                t10.setText("");
+                cursor[0]=9;
+            }
+        });
 
 
         submit.setOnClickListener(new View.OnClickListener() {
@@ -503,6 +539,7 @@ public class ItSem5List extends AppCompatActivity {
                 t7.setText("");
                 t8.setText("");
                 t9.setText("");
+                t10.setText("");
                 result.setVisibility(view.INVISIBLE);
                 cpyIcon.setVisibility(View.INVISIBLE);
                 copy.setVisibility(View.INVISIBLE);
@@ -541,7 +578,7 @@ public class ItSem5List extends AppCompatActivity {
     }
     public float calculate()
     {
-        int val1,val2,val3,val4,val5,val6,val7,val8,val9;
+        int val1,val2,val3,val4,val5,val6,val7,val8,val9,val10;
         if (t1.getText().toString().equals("S")||t1.getText().toString().equals("s"))
         {
             val1=10;
@@ -695,7 +732,24 @@ public class ItSem5List extends AppCompatActivity {
             val9=0;
         }
 
-        float res = ((float)val1*4+(float)val2*4+(float)val3*4+(float)val4*4+(float)val5*4+(float)val6*2+(float)val7*2+(float)val8*2+(float)val9*1)/27;
+        if (t10.getText().toString().equals("S")||t9.getText().toString().equals("s"))
+        {
+            val10=10;
+        }else if(t10.getText().toString().equals("A")||t10.getText().toString().equals("a")){
+            val10=9;
+        }else if(t10.getText().toString().equals("B")||t10.getText().toString().equals("b")){
+            val10=8;
+        }else if(t10.getText().toString().equals("C")||t10.getText().toString().equals("c")){
+            val10=7;
+        }else if(t10.getText().toString().equals("D")||t10.getText().toString().equals("d")){
+            val10=6;
+        }else if(t10.getText().toString().equals("E")||t10.getText().toString().equals("e")){
+            val10=5;
+        }else{
+            val10=0;
+        }
+
+        float res = ((float)val1*4+(float)val2*4+(float)val3*4+(float)val4*4+(float)val5*4+(float)val6*4+(float)val7*2+(float)val8*2+(float)val9*2+(float)val10*1)/27;
 
         return res;
     }

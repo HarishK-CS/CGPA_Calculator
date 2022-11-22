@@ -148,7 +148,8 @@ public class MainActivity extends AppCompatActivity {
         super.onOptionsItemSelected(item);
         if (item.getItemId()==R.id.main_help_option)
         {
-            Toast.makeText(MainActivity.this,"Help",Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity.this,HelpActivity.class);
+            startActivity(intent);
         }
         if(item.getItemId()==R.id.main_about_option)
         {

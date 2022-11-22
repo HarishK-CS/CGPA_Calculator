@@ -23,7 +23,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class MechSem3List extends AppCompatActivity {
-    Button submit,clear,copys,a,b,c,d,e,f;
+    Button submit,clear,copy,s,a,b,c,d,e,f;
     TextView result,resultText;
     ImageView cpyIcon,back;
     EditText t1,t2,t3,t4,t5,t6,t7,t8,t9;

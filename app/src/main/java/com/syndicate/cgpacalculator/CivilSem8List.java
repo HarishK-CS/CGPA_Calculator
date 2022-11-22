@@ -697,7 +697,7 @@ public class CivilSem8List  extends AppCompatActivity {
             val9=0;
         }
 
-        float res = ((float)val1*4+(float)val2*4+(float)val3*4+(float)val4*4+(float)val5*4+(float)val6*4+(float)val7*2+(float)val8*2+(float)val9*2)/30;
+        float res = ((float)val1*3+(float)val2*3+(float)val3*3+(float)val4*3+(float)val5*3+(float)val6*2+(float)val7*2+(float)val8*1+(float)val9*6)/26;
 
         return res;
     }

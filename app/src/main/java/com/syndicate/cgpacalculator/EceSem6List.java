@@ -73,7 +73,7 @@ public class EceSem6List extends AppCompatActivity {
 
 
         final int[] cursor = {0};
-        final String[] txt = {"t1","t2","t3","t4","t5","t6","t7","t8","t9","t10"};
+        final String[] txt = {"t1","t2","t3","t4","t5","t6","t7","t8","t9"};
 
 
 

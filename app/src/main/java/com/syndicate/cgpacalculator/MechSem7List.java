@@ -667,8 +667,25 @@ public class MechSem7List extends AppCompatActivity {
             val8=0;
         }
 
+        if (t9.getText().toString().equals("S")||t9.getText().toString().equals("s"))
+        {
+            val9=10;
+        }else if(t9.getText().toString().equals("A")||t9.getText().toString().equals("a")){
+            val9=9;
+        }else if(t9.getText().toString().equals("B")||t9.getText().toString().equals("b")){
+            val9=8;
+        }else if(t9.getText().toString().equals("C")||t9.getText().toString().equals("c")){
+            val9=7;
+        }else if(t9.getText().toString().equals("D")||t9.getText().toString().equals("d")){
+            val9=6;
+        }else if(t9.getText().toString().equals("E")||t9.getText().toString().equals("e")){
+            val9=5;
+        }else{
+            val9=0;
+        }
 
-        float res = ((float)val1*4+(float)val2*4+(float)val3*4+(float)val4*4+(float)val5*2+(float)val6*2+(float)val7*2+(float)val8*6)/28;
+
+        float res = ((float)val1*4+(float)val2*4+(float)val3*4+(float)val4*3+(float)val5*2+(float)val6*2+(float)val7*1+(float)val8*1+(float)val9*4)/25;
 
         return res;
     }

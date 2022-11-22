@@ -27,7 +27,7 @@ public class ItSem8List extends AppCompatActivity {
     Button submit,clear,copy,s,a,b,c,d,e,f;
     TextView result,resultText;
     ImageView cpyIcon,back;
-    EditText t1,t2,t3,t4,t5,t6,t7,t8;
+    EditText t1,t2,t3,t4,t5;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,9 +38,6 @@ public class ItSem8List extends AppCompatActivity {
         t3 = findViewById(R.id.txt3);
         t4 = findViewById(R.id.txt4);
         t5 = findViewById(R.id.txt5);
-        t6 = findViewById(R.id.txt6);
-        t7 = findViewById(R.id.txt7);
-        t8 = findViewById(R.id.txt8);
 
         back = findViewById(R.id.back);
 
@@ -67,21 +64,19 @@ public class ItSem8List extends AppCompatActivity {
         t3.setShowSoftInputOnFocus(false);
         t4.setShowSoftInputOnFocus(false);
         t5.setShowSoftInputOnFocus(false);
-        t6.setShowSoftInputOnFocus(false);
-        t7.setShowSoftInputOnFocus(false);
-        t8.setShowSoftInputOnFocus(false);
+
 
 
 
         final int[] cursor = {0};
-        final String[] txt = {"t1","t2","t3","t4","t5","t6","t7","t8"};
+        final String[] txt = {"t1","t2","t3","t4","t5"};
 
 
 
         s.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(cursor[0]<8){
+                if(cursor[0]<5){
                     switch(txt[cursor[0]]){
                         case "t1":
                             t1.setText("S");
@@ -103,18 +98,7 @@ public class ItSem8List extends AppCompatActivity {
                             t5.setText("S");
                             cursor[0]++;
                             break;
-                        case "t6":
-                            t6.setText("S");
-                            cursor[0]++;
-                            break;
-                        case "t7":
-                            t7.setText("S");
-                            cursor[0]++;
-                            break;
-                        case "t8":
-                            t8.setText("S");
-                            cursor[0]++;
-                            break;
+
 
                     }
                 }else{
@@ -126,7 +110,7 @@ public class ItSem8List extends AppCompatActivity {
         a.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(cursor[0]<8) {
+                if(cursor[0]<5) {
                     switch (txt[cursor[0]]) {
                         case "t1":
                             t1.setText("A");
@@ -148,18 +132,6 @@ public class ItSem8List extends AppCompatActivity {
                             t5.setText("A");
                             cursor[0]++;
                             break;
-                        case "t6":
-                            t6.setText("A");
-                            cursor[0]++;
-                            break;
-                        case "t7":
-                            t7.setText("A");
-                            cursor[0]++;
-                            break;
-                        case "t8":
-                            t8.setText("A");
-                            cursor[0]++;
-                            break;
 
                     }
                 }else{
@@ -172,7 +144,7 @@ public class ItSem8List extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (cursor[0] < 8) {
+                if (cursor[0] < 5) {
                     switch (txt[cursor[0]]) {
                         case "t1":
                             t1.setText("B");
@@ -194,18 +166,6 @@ public class ItSem8List extends AppCompatActivity {
                             t5.setText("B");
                             cursor[0]++;
                             break;
-                        case "t6":
-                            t6.setText("B");
-                            cursor[0]++;
-                            break;
-                        case "t7":
-                            t7.setText("B");
-                            cursor[0]++;
-                            break;
-                        case "t8":
-                            t8.setText("B");
-                            cursor[0]++;
-                            break;
 
                     }
                 } else {
@@ -217,7 +177,7 @@ public class ItSem8List extends AppCompatActivity {
         c.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (cursor[0] < 8) {
+                if (cursor[0] < 5) {
                     switch (txt[cursor[0]]) {
                         case "t1":
                             t1.setText("C");
@@ -239,18 +199,6 @@ public class ItSem8List extends AppCompatActivity {
                             t5.setText("C");
                             cursor[0]++;
                             break;
-                        case "t6":
-                            t6.setText("C");
-                            cursor[0]++;
-                            break;
-                        case "t7":
-                            t7.setText("C");
-                            cursor[0]++;
-                            break;
-                        case "t8":
-                            t8.setText("C");
-                            cursor[0]++;
-                            break;
 
                     }
                 }else{
@@ -261,7 +209,7 @@ public class ItSem8List extends AppCompatActivity {
         d.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (cursor[0] < 8) {
+                if (cursor[0] < 5) {
                     switch (txt[cursor[0]]) {
                         case "t1":
                             t1.setText("D");
@@ -283,18 +231,6 @@ public class ItSem8List extends AppCompatActivity {
                             t5.setText("D");
                             cursor[0]++;
                             break;
-                        case "t6":
-                            t6.setText("D");
-                            cursor[0]++;
-                            break;
-                        case "t7":
-                            t7.setText("D");
-                            cursor[0]++;
-                            break;
-                        case "t8":
-                            t8.setText("D");
-                            cursor[0]++;
-                            break;
 
                     }
                 }else{
@@ -305,7 +241,7 @@ public class ItSem8List extends AppCompatActivity {
         e.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (cursor[0] < 8) {
+                if (cursor[0] < 5) {
                     switch (txt[cursor[0]]) {
                         case "t1":
                             t1.setText("E");
@@ -327,18 +263,6 @@ public class ItSem8List extends AppCompatActivity {
                             t5.setText("E");
                             cursor[0]++;
                             break;
-                        case "t6":
-                            t6.setText("E");
-                            cursor[0]++;
-                            break;
-                        case "t7":
-                            t7.setText("E");
-                            cursor[0]++;
-                            break;
-                        case "t8":
-                            t8.setText("E");
-                            cursor[0]++;
-                            break;
 
                     }
                 }else{
@@ -349,7 +273,7 @@ public class ItSem8List extends AppCompatActivity {
         f.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (cursor[0] < 8) {
+                if (cursor[0] < 5) {
                     switch (txt[cursor[0]]) {
                         case "t1":
                             t1.setText("F");
@@ -371,19 +295,6 @@ public class ItSem8List extends AppCompatActivity {
                             t5.setText("F");
                             cursor[0]++;
                             break;
-                        case "t6":
-                            t6.setText("F");
-                            cursor[0]++;
-                            break;
-                        case "t7":
-                            t7.setText("F");
-                            cursor[0]++;
-                            break;
-                        case "t8":
-                            t8.setText("F");
-                            cursor[0]++;
-                            break;
-
                     }
                 }else{
                     cursor[0] = 0;
@@ -429,27 +340,6 @@ public class ItSem8List extends AppCompatActivity {
                 cursor[0]=4;
             }
         });
-        t6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                t6.setText("");
-                cursor[0]=5;
-            }
-        });
-        t7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                t7.setText("");
-                cursor[0]=6;
-            }
-        });
-        t8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                t8.setText("");
-                cursor[0]=7;
-            }
-        });
 
 
 
@@ -483,9 +373,6 @@ public class ItSem8List extends AppCompatActivity {
                 t3.setText("");
                 t4.setText("");
                 t5.setText("");
-                t6.setText("");
-                t7.setText("");
-                t8.setText("");
                 result.setVisibility(view.INVISIBLE);
                 cpyIcon.setVisibility(View.INVISIBLE);
                 copy.setVisibility(View.INVISIBLE);
@@ -515,7 +402,7 @@ public class ItSem8List extends AppCompatActivity {
     }
     public float calculate()
     {
-        int val1,val2,val3,val4,val5,val6,val7,val8;
+        int val1,val2,val3,val4,val5;
         if (t1.getText().toString().equals("S")||t1.getText().toString().equals("s"))
         {
             val1=10;
@@ -601,59 +488,8 @@ public class ItSem8List extends AppCompatActivity {
             val5=0;
         }
 
-        if (t6.getText().toString().equals("S")||t6.getText().toString().equals("s"))
-        {
-            val6=10;
-        }else if(t6.getText().toString().equals("A")||t6.getText().toString().equals("a")){
-            val6=9;
-        }else if(t6.getText().toString().equals("B")||t6.getText().toString().equals("b")){
-            val6=8;
-        }else if(t6.getText().toString().equals("C")||t6.getText().toString().equals("c")){
-            val6=7;
-        }else if(t6.getText().toString().equals("D")||t6.getText().toString().equals("d")){
-            val6=6;
-        }else if(t6.getText().toString().equals("E")||t6.getText().toString().equals("e")){
-            val6=5;
-        }else{
-            val6=0;
-        }
 
-        if (t7.getText().toString().equals("S")||t7.getText().toString().equals("s"))
-        {
-            val7=10;
-        }else if(t7.getText().toString().equals("A")||t7.getText().toString().equals("a")){
-            val7=9;
-        }else if(t7.getText().toString().equals("B")||t7.getText().toString().equals("b")){
-            val7=8;
-        }else if(t7.getText().toString().equals("C")||t7.getText().toString().equals("c")){
-            val7=7;
-        }else if(t7.getText().toString().equals("D")||t7.getText().toString().equals("d")){
-            val7=6;
-        }else if(t7.getText().toString().equals("E")||t7.getText().toString().equals("e")){
-            val7=5;
-        }else{
-            val7=0;
-        }
-
-        if (t8.getText().toString().equals("S")||t8.getText().toString().equals("s"))
-        {
-            val8=10;
-        }else if(t8.getText().toString().equals("A")||t8.getText().toString().equals("a")){
-            val8=9;
-        }else if(t8.getText().toString().equals("B")||t8.getText().toString().equals("b")){
-            val8=8;
-        }else if(t8.getText().toString().equals("C")||t8.getText().toString().equals("c")){
-            val8=7;
-        }else if(t8.getText().toString().equals("D")||t8.getText().toString().equals("d")){
-            val8=6;
-        }else if(t8.getText().toString().equals("E")||t8.getText().toString().equals("e")){
-            val8=5;
-        }else{
-            val8=0;
-        }
-
-
-        float res = ((float)val1*1+(float)val2*4+(float)val3*4+(float)val4*4+(float)val5*4+(float)val6*1+(float)val7*1+(float)val8*8)/27;
+        float res = ((float)val1*1+(float)val2*4+(float)val3*4+(float)val4*8+(float)val5*1)/18;
 
         return res;
     }
@@ -732,84 +568,7 @@ public class ItSem8List extends AppCompatActivity {
             }
 
         });
-        t5.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (!s.toString().trim().isEmpty()) {
-                    t6.requestFocus();
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-            }
-
-        });
-        t6.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (!s.toString().trim().isEmpty()) {
-                    t7.requestFocus();
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-            }
-
-        });
-        t7.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (!s.toString().trim().isEmpty()) {
-                    t8.requestFocus();
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-            }
-
-        });
-
-        t8.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (!s.toString().trim().isEmpty()) {
-                    InputMethodManager imm  =  (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
-                    imm.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY,0);
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-            }
-
-        });
     }
 
     public void write(){

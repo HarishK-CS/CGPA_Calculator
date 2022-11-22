@@ -145,7 +145,7 @@
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_10sdp"
                 android:fontFamily="@font/spartan_bold"
-                android:text="Dig signal pro"
+                android:text="DSP"
                 android:textSize="@dimen/_10sdp" />
 
             <EditText

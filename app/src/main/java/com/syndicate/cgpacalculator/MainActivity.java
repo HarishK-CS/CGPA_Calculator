@@ -11,6 +11,9 @@ import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -34,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
  //   Button btnCSE,btnIT,btnECE,btnEEE,btnMech,btnCivil,btnCgpa;
     TabsAccessAdapter tabsAccessAdapter;
 
+
     @Override
     protected void onStart() {
         super.onStart();
@@ -52,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
 //        btnMech = findViewById(R.id.btnMech);
 //        btnCivil = findViewById(R.id.btnCivil);
 //        btnCgpa = findViewById(R.id.btnCgpa);
-
 
 
         toolbar = findViewById(R.id.main_page_toolbar);

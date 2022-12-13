@@ -17,6 +17,7 @@
         >
 
         <ImageView
+            android:id="@+id/image"
             android:layout_width="@dimen/_200sdp"
             android:layout_height="@dimen/_200sdp"
             android:layout_margin="@dimen/_2sdp"
@@ -24,6 +25,7 @@
             />
 
         <TextView
+            android:id="@+id/t1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="A Simple ,User Friendly PY(Univ) CGPA Calculator"
@@ -44,6 +46,7 @@
         >
 
         <TextView
+            android:id="@+id/t2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="From"
@@ -53,6 +56,7 @@
             />
 
         <TextView
+            android:id="@+id/t3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TechCos Inc."
